@@ -12,11 +12,11 @@ Extracted parts of my pet project of virtual assistant, written in Python. Proje
 7. daily checklist of tasks.
 
 ## Project structure
-1. When device is turned on, there is a constant loop waiting for user imput. Two scenarios can happen:
+1. When device is turned on, there is a constant loop waiting for user input (***start_yn.py***). Two scenarios can happen:
    - user wants to start virtual-assistant
    - user wants to access Raspberry Pi
-2. When assistant is started, all functions are available except for meal planning and pomodoro timer.
+2. When assistant is started, all functions are available (***main.py***) except for meal planning and pomodoro timer.
    - Always-on display shows top priority tasks, which are sorted by priority and due date.
    - Functions are triggered by button press. Each functionality has a button assigned.
-   - Meal planning is accessed from command line as a standalone script.
+   - Meal planning (***mealplan_shopping.py***) is accessed from command line as a standalone script.
    - Pomodoro timer is additional function that can be run on top of normal function, but is off by default for power saving and is triggered by designated button.
